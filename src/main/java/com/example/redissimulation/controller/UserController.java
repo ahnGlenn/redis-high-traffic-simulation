@@ -16,8 +16,8 @@ import java.util.Map;
 @RequestMapping("/api")
 public class UserController {
 
-     @Autowired
-     private UserService userService;
+    @Autowired
+    private UserService userService;
 
     @PostMapping("/login")
     public ResponseEntity<Map<String, String>> login(@RequestBody LoginRequest loginRequest, HttpSession session) {
@@ -28,7 +28,7 @@ public class UserController {
         User user = userService.authenticate(email, password);
         Map<String, String> response = new HashMap<>();
         if (user != null) {
-            session.setAttribute("user", user);
+            // session.setAttribute("user", user); // 여기선 레디스에 쌓을거라 주석처리.
             response.put("message", "Login successful!");
             response.put("userEmail", user.getEmail());
             return ResponseEntity.ok(response);
