@@ -5,6 +5,7 @@
 
 # 1. 프로젝트 목표
  - 대용량 트래픽을 발생시켜 Redis를 통한 세션 관리의 성능을 테스트하고 병목지점을 파악
+   - JMeter를 통한 동시접속건수 설정
  - Redis의 캐싱 및 세션 저장 기능을 활용하여 애플리케이션 성능을 향상
  - 부하 테스트를 통해 시스템이 얼마나 많은 요청을 처리할 수 있는지, 어떤 한계점이 존재하는지 파악
 
@@ -48,4 +49,11 @@
 
 # 8. 디렉토리 구조
 ![image](https://github.com/user-attachments/assets/91620caf-21cb-4bb0-8625-8b70b972fe4c)
+
+<br/>
+
+# [ 기록 & 에러 ]
+1. @EnableRedisHttpSession과 application.properties에서 Redis 설정을 주석 처리했음에도 불구하고 Redis에 세션이 저장되는 이유?
+   - Spring Boot의 자동 구성 기능과 spring-session-data-redis(build.gradle) 라이브러리 때문에, @EnableRedisHttpSession과 Redis 설정을 주석 처리해도 Redis에 세션이 저장될 수 있다. 따라서 spring.session.store-type=none(application.properties) 처리
+   - 그래도 안되면 build.gradle의 라이브러리 의존성을 주석 implementation 'org.springframework.session:spring-session-data-redis'
 
