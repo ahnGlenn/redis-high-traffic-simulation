@@ -55,4 +55,5 @@
 # [ 기록 & 에러 ]
 1. @EnableRedisHttpSession과 application.properties에서 Redis 설정을 주석 처리했음에도 불구하고 Redis에 세션이 저장되는 이유?
    - Spring Boot의 자동 구성 기능과 spring-session-data-redis(build.gradle) 라이브러리 때문에, @EnableRedisHttpSession과 Redis 설정을 주석 처리해도 Redis에 세션이 저장될 수 있다. 따라서 spring.session.store-type=none(application.properties) 처리
+   - 그래도 안되면 build.gradle의 라이브러리 의존성을 주석 implementation 'org.springframework.session:spring-session-data-redis'
 
