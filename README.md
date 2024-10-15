@@ -43,3 +43,9 @@
 - Redis 클러스터 구성: 대용량 트래픽을 처리하기 위해 Redis 클러스터를 구성하고, Sharding을 이용하여 데이터를 분산 저장합니다.
 - 로드 밸런싱: 여러 서버에 트래픽을 분산시켜 서버 과부하를 방지합니다.
 - Redis 장애 대비: Redis Sentinel을 이용해 Redis 장애 상황에서 자동으로 장애 복구를 수행하도록 설정합니다.
+
+<br/>
+
+# 8. 디렉토리 구조
+![image](https://github.com/user-attachments/assets/91620caf-21cb-4bb0-8625-8b70b972fe4c)
+
