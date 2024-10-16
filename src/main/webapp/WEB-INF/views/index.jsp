@@ -1,21 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <style>
     :root {--padding: 60px;}
-    .box {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-
-        position: relative;
-        margin: 50px auto;
-        width: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: var(--padding);
-        background-color: #DDE6ED;
-        border-radius: 7px;
-    }
+    .box { box-sizing: border-box; margin: 0; padding: 0; position: relative; margin: 50px auto; width: 400px; display: flex; flex-direction: column; justify-content: center; padding: var(--padding); background-color: #DDE6ED; border-radius: 7px; }
     .box input, .box button {padding: 15px;font-size: 1.2em;border: none;}
     .box input {margin-bottom: 25px;}
     .box button {background-color: #526D82;color: #9DB2BF;border-radius: 4px;}

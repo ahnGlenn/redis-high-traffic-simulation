@@ -22,6 +22,7 @@
     <title>[Redis]Session List</title>
 </head>
 <body style="padding:1.5em; background: #f5f5f5">
+<h1>Redis Session List</h1>
 <table>
     <thead>
     <tr>
