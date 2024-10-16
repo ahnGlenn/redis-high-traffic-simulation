@@ -54,7 +54,7 @@
             success: function (data, textStatus, XMLHttpRequest) {
                 console.log("Response Data:", data); // JSON 데이터 확인
                 console.log("User Email:", data.userEmail); // 추가된 데이터 확인
-               //  window.location.href = "/home"; // 이동할 페이지 URL
+                location.href = "/main"; // 이동할 페이지 URL
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 alert(data.message); // 로그인 실패 시 메시지 출력
