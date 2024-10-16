@@ -5,12 +5,16 @@
     .box input, .box button {padding: 15px;font-size: 1.2em;border: none;}
     .box input {margin-bottom: 25px;}
     .box button {background-color: #526D82;color: #9DB2BF;border-radius: 4px;}
+    .intro {text-align:center;color: #9DB2BF;padding-top: 10px;}
 </style>
 <html>
 <head>
     <title>Welcome</title>
 </head>
 <body style="background-color: #27374D">
+    <div class="intro">
+        <h1>Redis Session Manage</h1>
+    </div>
     <div class="box">
         <input type="email" id="email" placeholder="Email" />
         <input type="password" id="password" placeholder="Password" />
