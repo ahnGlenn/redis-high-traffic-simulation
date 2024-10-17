@@ -1,4 +1,4 @@
-# redis-high-traffic-simulation
+![image](https://github.com/user-attachments/assets/60349fb5-3e26-4eda-b02d-fb8d3ad82e01)# redis-high-traffic-simulation
 Redis를 이용한 대용량 트래픽을 경험(접속자 세션을 부하시키는 프로젝트를 설계하고 운영)
 
 <br/>
@@ -17,16 +17,21 @@ Redis를 이용한 대용량 트래픽을 경험(접속자 세션을 부하시�
 <br/>
 
 # 3. 구현
-1. SpringBoot, jsp를 사용하여 로그인 화면 구현.
+1. SpringBoot, jsp를 사용하여 로그인 화면 구현
 2. Redis서버 설치 및 클러스터링 작업
 3. JMeter를 통한 로그인 과부하 통신 발생
 
 <br/>
 
 # 4. 부하 테스트 시나리오 설정
-1. 동시 접속자 수 증가 테스트: 점진적으로 동시 접속자 수를 늘리면서 서버의 반응 시간을 측정
-2. 지속적인 부하 테스트: 일정 시간 동안 지속적으로 요청을 보내며 서버가 안정적으로 처리할 수 있는지를 확인
-3. 피크 트래픽 테스트: 짧은 시간 동안 많은 요청을 보내 트래픽이 급증하는 상황을 시뮬레이션
+1. 동시 접속자 수 증가 테스트: JMeter로 부하가 걸릴때까지 데이터를 점진적으로 늘리며, 에러를 과부하로인한 커넥션 에러 발생시키기.
+ - 1. 동시접속 5000개 발생
+ ![image](https://github.com/user-attachments/assets/c9588a1f-6e91-45d3-a454-c2190bfcd676)
+ - 2. 에러 발생
+ ![image](https://github.com/user-attachments/assets/89a25447-d637-4950-ae3a-a6e51486e29f)
+3. Redis클러스터링 구축 후 동시접속을 다시 발생시키며, 정상등록됨을 확인
+
+4. 피크 트래픽 테스트: 짧은 시간 동안 많은 요청을 보내 트래픽이 급증하는 상황을 시뮬레이션
 
 <br/>
 
