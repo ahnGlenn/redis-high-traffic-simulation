@@ -45,8 +45,8 @@ Redis를 이용한 대용량 트래픽을 경험(접속자 세션을 부하시�
     - 자동화된 데이터 분산: Redis 클러스터링은 데이터(세션)를 자동으로 여러 노드에 분산시켜 저장한다. 이를 통해 단일 노드의 메모리 용량이나 처리 한계를 극복 가능
     - 고가용성 지원: 클러스터링 환경에서는 노드에 장애가 발생해도 다른 노드가 대신 처리할 수 있다. 클러스터의 각 마스터 노드는 슬레이브 노드와 함께 장애 복구를 지원
     - 부하 분산: 여러 노드가 동시에 요청을 처리하므로, 부하가 분산되어 성능이 향상
-4. Redis클러스터링 구성 방법
-   <img src="https://github.com/user-attachments/assets/d9ac68aa-aaf4-419f-a160-a3935e0d674e" alt="클러스터링구성작업" width="500">
+4. Redis클러스터링 구성 방법<br/>
+   <img src="https://github.com/user-attachments/assets/d9ac68aa-aaf4-419f-a160-a3935e0d674e" alt="클러스터링구성작업" width="700">
 
 <br/>
 
