@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/60349fb5-3e26-4eda-b02d-fb8d3ad82e01)# redis-high-traffic-simulation
+# redis-high-traffic-simulation
 Redis를 이용한 대용량 트래픽을 경험(접속자 세션을 부하시키는 프로젝트를 설계하고 운영)
 
 <br/>
@@ -25,10 +25,12 @@ Redis를 이용한 대용량 트래픽을 경험(접속자 세션을 부하시�
 
 # 4. 부하 테스트 시나리오 설정
 1. 동시 접속자 수 증가 테스트: JMeter로 부하가 걸릴때까지 데이터를 점진적으로 늘리며, 에러를 과부하로인한 커넥션 에러 발생시키기.
- - 1. 동시접속 5000개 발생
- ![image](https://github.com/user-attachments/assets/c9588a1f-6e91-45d3-a454-c2190bfcd676)
- - 2. 에러 발생
- ![image](https://github.com/user-attachments/assets/89a25447-d637-4950-ae3a-a6e51486e29f)
+ - 동시접속 5000개 발생
+   <img src="https://github.com/user-attachments/assets/c9588a1f-6e91-45d3-a454-c2190bfcd676" alt="동시접속 5000개 발생 이미지" width="500">
+
+ - 에러 발생
+   <img src="https://github.com/user-attachments/assets/89a25447-d637-4950-ae3a-a6e51486e29f" alt="에러 발생 이미지" width="500">
+
 3. Redis클러스터링 구축 후 동시접속을 다시 발생시키며, 정상등록됨을 확인
 
 4. 피크 트래픽 테스트: 짧은 시간 동안 많은 요청을 보내 트래픽이 급증하는 상황을 시뮬레이션
