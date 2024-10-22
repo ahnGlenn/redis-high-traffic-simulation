@@ -60,3 +60,8 @@ Redis를 이용한 대용량 트래픽을 경험
    - Spring Boot의 자동 구성 기능과 spring-session-data-redis(build.gradle) 라이브러리 때문에, @EnableRedisHttpSession과 Redis 설정을 주석 처리해도 Redis에 세션이 저장될 수 있다. 따라서 spring.session.store-type=none(application.properties) 처리
    - 그래도 안되면 build.gradle의 라이브러리 의존성을 주석 implementation 'org.springframework.session:spring-session-data-redis'
 
+<br/>
+
+# 추가적인 고려 사항
+- 세션 일관성: Redis를 단일 인스턴스로 사용할 경우, 인스턴스 장애 시 세션 데이터 손실 가능성이 있습니다. Redis Cluster 또는 복제를 통해 세션의 가용성을 높일 수 있습니다.
+- 보안 고려: 세션 정보가 Redis에 평문으로 저장되지 않도록 암호화하거나 Redis 연결 시 보안 설정을 적용합니다.
