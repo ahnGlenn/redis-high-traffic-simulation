@@ -48,12 +48,12 @@ Redis를 이용한 대용량 트래픽을 경험
 4. Redis클러스터링 구성 방법<br/>
    <img src="https://github.com/user-attachments/assets/d9ac68aa-aaf4-419f-a160-a3935e0d674e" alt="클러스터링구성작업" width="700">
 
-<br/>
+<br/><br/>
 
 # 8. 디렉토리 구조
 ![image](https://github.com/user-attachments/assets/91620caf-21cb-4bb0-8625-8b70b972fe4c)
 
-<br/>
+<br/><br/>
 
 # [ 기록 & 에러 ]
 1. @EnableRedisHttpSession과 application.properties에서 Redis 설정을 주석 처리했음에도 불구하고 Redis에 세션이 저장되는 이유?
