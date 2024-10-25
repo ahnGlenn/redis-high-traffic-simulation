@@ -1,7 +1,7 @@
 # redis-high-traffic-simulation
 Redis를 이용한 대용량 트래픽을 경험
 
-<br/>
+<br/><br/>
 
 # 1. 프로젝트 목표
  - 대용량 트래픽을 발생시켜 Redis를 통한 세션 관리의 성능을 테스트하고 병목지점을 파악
