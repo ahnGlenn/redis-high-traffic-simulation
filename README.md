@@ -8,7 +8,7 @@ Redis를 이용한 대용량 트래픽을 경험
  - Redis의 기능을 활용하여 애플리케이션 성능을 향상
  - JMeter로 부하 트래픽을 발생 시킨 후 Redis의 기능을 통해 문제점 해결 
  
-<br/>
+<br/><br/>
 
 # 2. 아키텍처
 ![image](https://github.com/user-attachments/assets/ccd35302-97ff-42e6-9751-f727461a6ef5)
