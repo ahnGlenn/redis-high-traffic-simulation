@@ -14,7 +14,7 @@ Redis를 이용한 대용량 트래픽을 경험
 ![image](https://github.com/user-attachments/assets/ccd35302-97ff-42e6-9751-f727461a6ef5)
 
 
-<br/><br/>
+<br/>
 
 # 3. 구현
 1. SpringBoot, jsp를 사용하여 로그인 화면 구현
